@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+ body{  
+    background: url(/IMAGES/6544190.jpg) no-repeat center fixed; 
+    background-size: cover;
+}
+* {
+	box-sizing: border-box;
+  }
+
+
+/*------------------------------------------------------------------------------- Debut  de la navigation */
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+}
+header li {
+    float: right;
+}
+.navigation li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+	padding: 14px;
+	display: block;
+	font-weight: 700;
+}
+.navigation li :hover {
+    border: 3px solid white;
+    padding: 10px;
+}
+.logo {
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------------------- Fin  de la navigation */
+
+
+
+/*------------------------------------------------------------------------------- Debut du Contenu de "Bienvenu" */
+.intro {
+    margin-top: 110px;
+}
+.wlc {
+    align-items: center;
+    margin: 30px 40px;
+    padding: 20px;
+    background:  rgba(134, 31, 134, 0.465) no-repeat center fixed;
+    color: rgb(255, 255, 255);
+}
+#bienvenue, #slogan {
+    word-wrap: break-word;
+	text-align: center;
+}
+
+.blog  /*Button vers le blog*/
+{
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;
+    background-color: rgb(145, 145, 214);
+    border: 2px solid white;
+	border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(145, 145, 214);
+    border: 2px solid white;	
+}
+.blog:hover {
+	font-size: larger;
+	color: rgb(225, 0, 255);
+}
+
+/*------------------------------------------------------------------------------- Fin du Contenu de "Bienvenu" */
+
+
+/*------------------------------------------------------------------------------- Debut de la gallerie d'images */
+figure {
+	margin: 0px;
+}
+
+.why {
+	margin-bottom: 70px;
+}
+
+div.gallery {
+	border: 1px solid #ccc;
+  }
+  
+div.gallery:hover {
+	border: 1px solid rgb(255, 0, 255);
+  }
+  
+div.gallery img {
+	width: 100%;
+	height: auto;
+  }
+  
+.desc {
+	padding: 15px;
+	text-align: center;
+  }
+  
+.responsive {
+	padding: 6px ;
+	float: left;
+	width: 24.99999%;
+	
+  }
+  
+  /* Rendre la gallerie d'images compatible avec n'importe quelle taille de la page */
+  @media only screen and (max-width: 700px) {
+	.responsive {
+	  width: 49.99999%;
+	  margin: 6px 0;
+	}
+	
+  }
+  
+  @media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+  }
+  
+  .clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+/*------------------------------------------------------------------------------- Fin de la gallerie d'images */
+
+
+
+/*------------------------------------------------------------------------------- Debut Slider d'images */  
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: fit-content;
+}
+
+/* SLIDER */
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+	
+}
+
+/* SLIDES */
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+}
+
+
+/* les classes PREV/NEXT, CONTAINERS & ANCHORS */
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; 
+}
+
+.CSSgal .prevNext a {
+	background: rgb(245, 239, 239);
+	position: absolute;
+	width:       30px;
+	height:      30px;
+	line-height: 60px; 
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+	
+}
+.CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+/* les bulles de navigation */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:       30px;
+	height:      30px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(246, 0, 205, 0.7) !important;
+}
+
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgb(148, 4, 105);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgb(148, 4, 105);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgb(148, 4, 105);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgb(148, 4, 105);}
+
+
+
+/* visibilité du precedent et prochain container */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+
+/*Animation desactivé*/
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(-300%);}
+
+.CSSgal .slider h2 {
+	margin-top: 2vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 2.5em;
+}
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------- Fin Slider d'images */  
+
+
+
+/*------------------------------------------------------------------------------- Debut du Pied de page */
+
+.footer-distributed /*le design general*/
+{
+	background: rgba(5, 2, 2, 0.657);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 45px 40px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer gauche */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* logo */
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  rgb(234, 8, 255);
+}
+
+/* Liens */
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-links  :hover {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(207, 2, 214);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Centre */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer droit */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 70px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+    text-decoration: none;
+
+	font-size: 13px;
+	color: #cec1c1;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+/* Rendre le footer compatible avec n'importe quelle taille de la page */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+/*------------------------------------------------------------------------------- Fin du Pied de page */

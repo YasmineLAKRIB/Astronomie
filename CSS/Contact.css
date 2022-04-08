@@ -1,0 +1,100 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/*Mise en forme cadre du formulaire*/
+form {
+    position: relative;
+    border: 2px solid white;
+    padding: 50px;
+    margin: 50px 100px 100px ;
+   
+    
+}
+/**************************** Debut Mise en form des textes et titres */
+
+.titres {
+    color: #ffffff;
+    position: relative;
+    border: 2px solid white;
+    padding: 20px;
+    margin: 100px 100px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+.titres h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+/**************************** Fin Mise en form des textes et titres */
+
+
+/****************************************************************************Debut mise en forme du formulaire de contact*/
+  
+  input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(255, 1, 234);
+    border-radius: 4px;
+    resize: none;
+  }
+
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: violet;
+    font-size: large;
+    
+  }
+  
+  input[type=submit] {
+    color: white;
+    cursor: pointer;
+    float: right;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px;
+    width: 130px;
+    background-color: rgb(145, 145, 214);
+    border: 2px solid white;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #e90de9;
+    font-size: larger;
+  }
+  
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    
+    
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/*Responsivité de l'ecran quand la taille est inferieur a 600px*/
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+/****************************************************************************Fin mise en forme du formulaire de contact*/
+

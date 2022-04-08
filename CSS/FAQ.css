@@ -1,0 +1,170 @@
+
+/* *********************************************************************************Debut Mise en form du aside bar */
+
+.rightcolumn {
+    float: right;
+    width: 18%;
+    padding: 30px;
+    background-color: #ff00ea77;
+    border-radius: 4px;
+  	margin-top: 70px;
+  }
+ 
+
+  /* effet de carte dans l'article */
+  .card {
+    background-color: white;
+    padding: 13px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    border-radius: 4px;
+    margin: 0px 10px 10px 10px;
+    
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* responsivité quand la taille de l'ecran et inferieur a 800px */
+@media screen and (max-width: 800px) {
+  .rightcolumn {   
+    width: 100%;
+    padding: 0;
+	
+  }
+}
+/* *********************************************************************************Fin Mise en form du aside bar */
+
+/* ************************************************************************Debut Mise en forme des box questions reponses*/
+
+/* Espacement entre les questions */
+.faq-section{
+    margin: 40px 20px;
+    width: auto; 
+}
+
+/* Masquer les checkbox et les paragraphes */
+.faq-section input,
+.faq-section p{
+    display: none;
+    word-wrap: break-word;
+    width: fit-content;
+}
+
+/* Montrer uniquement les débuts de réponses */
+.faq-section label+p{
+    display: block;
+    color: rgb(216, 212, 212);
+    font-size: .85em;
+    transition: all .15s ease-out;
+    /* Couper le texte */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Si le checkbox est coché, montrer tous les paragraphes */
+.faq-section input[type=checkbox]:checked~p{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    /* Restaurer le texte entier */
+    text-overflow: clip;
+    white-space: normal;
+    overflow: visible;
+    
+}
+
+/* Style des label */
+.faq-section label{
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 60%;
+    display: block;
+    position: relative;
+    padding: 7px 10px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out;
+    border-radius: 20px;
+    background-color: rgb(145, 145, 214);
+    border: 2px solid white;
+}
+
+/* Éviter de sélectionner le texte en cliquant plusieurs fois */
+.faq-section label::selection{
+    background: none;
+}
+
+.faq-section label:hover{
+    background: #f5f5f5;
+}
+
+/* Style du label si le checkbox est coché */
+.faq-section input[type=checkbox]:checked~label{
+    border-color: #00c3ff;
+   
+    background-image: linear-gradient(to bottom, rgba(196, 17, 228, 0.479), #1612df7a);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);
+}
+
+/* Flèche du label par défaut */
+.faq-section label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit;
+}
+
+/* Flèche du label sélectionné */
+.faq-section input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;
+}
+
+
+/* ********************************************************* Debut Mise en form du box "posez vos questions"*/
+#qst {
+    align-items: center;
+    color: #ffffff;
+    margin: 40px;
+    padding: 20px;
+    width: 90%;
+    font-size: 1.2em;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgba(248, 3, 228, 0.383);
+    border: 2px solid rgb(255, 6, 234);
+    height: fit-content;
+}
+#qst input{
+    width: 100%;
+    border-radius: 20px;
+}
+#qst button {
+    color: white;
+    cursor: pointer;
+    float: right;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 130px;
+    background-color: rgb(145, 145, 214);
+    border: 2px solid white;
+}
+#qst button:hover {
+    background-color: rgb(200, 18, 161);
+  
+}
+/* ********************************************************* Debut Mise en form du box "posez vos questions"*/
+
+/* ************************************************************************Debut Mise en forme des box questions reponses*/
