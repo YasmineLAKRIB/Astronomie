@@ -7,6 +7,7 @@
 }
 * {
 	box-sizing: border-box;
+	font: 1em sans-serif;
   }
 
 /* ******************************Dedut Structuration Standard du document */
@@ -40,10 +41,11 @@
  main {
   padding: 110px 35px ;
 }
- /* ******************************Fin Structuration Standard du document */
+ /* ******************Fin Structuration Standard du document */
 
 
-/*------------------------------------------------------------------------------- Debut  de la navigation */
+/*--------------------------------------- Debut  de la navigation */
+
 
 header ul {
   list-style-type: none;
@@ -76,20 +78,25 @@ font-weight: 700;
   font-weight: bold;
 }
 
-/*------------------------------------------------------------------------------- Fin  de la navigation */
+/*--------------------------------------------- Fin  de la navigation */
 
-/*------------------------------------------------------------------------------- Debut du Contenu de "Bienvenu" */
+/*------------------------------------ Debut du Contenu de "Bienvenu" */
+.intro h2 {
+	font-size: 35px;
+	font-weight: 700;
+}
 
 .wlc {
   align-items: center;
   margin: 0px 40px 30px 40px;
   padding: 20px;
- 
   color: rgb(255, 255, 255);
 }
+
 #bienvenue, #slogan {
   word-wrap: break-word;
   text-align: center;
+  font-size: 25px;
 }
 
 .blog  /*Button vers le blog*/
@@ -112,10 +119,10 @@ font-size: 22px;
 font-weight: 900;
 }
 
-/*------------------------------------------------------------------------------- Fin du Contenu de "Bienvenu" */
+/*--------------------------------------- Fin du Contenu de "Bienvenu" */
 
 
-/*------------------------------------------------------------------------------- Debut de la gallerie d'images */
+/*--------------------------------------- Debut de la gallerie d'images */
 figure {
 	margin: 0px;
 }
@@ -203,9 +210,12 @@ div.gallery img {
 	
 }
 
+#A h4 {
+   font-weight: 400;	
+}
 /* SLIDES */
 .CSSgal .slider > * {
-	font-size: 1rem;
+	font-size: 15px;
 	display: inline-block;
 	white-space: normal;
 	vertical-align: top;
@@ -213,6 +223,7 @@ div.gallery img {
 	width: 100%;
 	background: none 50% no-repeat;
 	background-size: cover;
+	
 }
 
 
