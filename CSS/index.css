@@ -9,81 +9,107 @@
 	box-sizing: border-box;
   }
 
+/* ******************************Dedut Structuration Standard du document */
+
+.column {
+    float: left;
+ 
+  }
+    
+  /*  column centre */
+  .column.middle {
+    width: 100%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+    .column.side {
+      position: inherit;
+    }
+  }
+  
+  /*Mise en forme du main*/
+ main {
+  padding: 110px 35px ;
+}
+ /* ******************************Fin Structuration Standard du document */
+
 
 /*------------------------------------------------------------------------------- Debut  de la navigation */
 
 header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 header li {
-    float: right;
+  float: right;
 }
 .navigation li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-	padding: 14px;
-	display: block;
-	font-weight: 700;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  padding: 14px;
+  display: block;
+font-weight: 700;
 }
 .navigation li :hover {
-    border: 3px solid white;
-    padding: 10px;
+  border: 3px solid white;
+  padding: 10px;
 }
+
 .logo {
-    display:inline-block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 10px;
-    font-size: 30px;
-    font-weight: bold;
+  display:inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 /*------------------------------------------------------------------------------- Fin  de la navigation */
 
-
-
 /*------------------------------------------------------------------------------- Debut du Contenu de "Bienvenu" */
-.intro {
-    margin-top: 110px;
-}
+
 .wlc {
-    align-items: center;
-    margin: 30px 40px;
-    padding: 20px;
-    background:  rgba(134, 31, 134, 0.465) no-repeat center fixed;
-    color: rgb(255, 255, 255);
+  align-items: center;
+  margin: 0px 40px 30px 40px;
+  padding: 20px;
+ 
+  color: rgb(255, 255, 255);
 }
 #bienvenue, #slogan {
-    word-wrap: break-word;
-	text-align: center;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .blog  /*Button vers le blog*/
 {
-    border-radius: 20px;
-    padding: 10px;
-    width: auto;
-    background-color: rgb(145, 145, 214);
-    border: 2px solid white;
-	border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    color: white;
-    border-radius: 20px;
-    background-color: rgb(145, 145, 214);
-    border: 2px solid white;	
+  padding: 10px;
+  background-color: rgba(3, 255, 242, 0.368);
+  font-size: 20px;
+  border: 2px solid white;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  border-radius: 4px;
+
 }
 .blog:hover {
-	font-size: larger;
-	color: rgb(225, 0, 255);
+
+font-size: 22px;
+font-weight: 900;
 }
 
 /*------------------------------------------------------------------------------- Fin du Contenu de "Bienvenu" */
@@ -99,11 +125,11 @@ figure {
 }
 
 div.gallery {
-	border: 1px solid #ccc;
+	border: 1px solid rgb(255, 255, 255);
   }
   
 div.gallery:hover {
-	border: 1px solid rgb(255, 0, 255);
+	border: 1px solid rgb(255, 0, 174);
   }
   
 div.gallery img {
@@ -147,6 +173,18 @@ div.gallery img {
 /*------------------------------------------------------------------------------- Fin de la gallerie d'images */
 
 
+.creation {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: rgba(255, 1, 217, 0.52);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: larger;
+  margin-bottom: 50px;
+  margin: 25px;
+  font-size: 25px;
+  }
 
 /*------------------------------------------------------------------------------- Debut Slider d'images */  
 
@@ -319,7 +357,7 @@ div.gallery img {
 }
 
 .footer-distributed h3 span{
-	color:  rgb(234, 8, 255);
+	color:  rgb(127, 1, 138);
 }
 
 /* Liens */
@@ -342,7 +380,7 @@ div.gallery img {
 }
 
 .footer-distributed .footer-company-name{
-	color:  rgb(207, 2, 214);
+	color:  rgb(127, 1, 138);
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -472,6 +510,7 @@ div.gallery img {
 	}
 
 }
+
 
 
 /*------------------------------------------------------------------------------- Fin du Pied de page */

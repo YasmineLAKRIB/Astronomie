@@ -1,25 +1,23 @@
 
-/* *********************************************************************************Debut Mise en form du aside bar */
+/* ******************************Dedut Structuration du document */
 
-.rightcolumn {
-    float: right;
-    width: 18%;
-    padding: 30px;
-    background-color: #ff00ea77;
-    border-radius: 4px;
-  	margin-top: 70px;
+.column {
+    float: left;
+    padding: 10px;
   }
- 
-
-  /* effet de carte dans l'article */
-  .card {
-    background-color: white;
-    padding: 13px;
-    margin-bottom: 20px;
-    word-wrap: break-word;
-    border-radius: 4px;
-    margin: 0px 10px 10px 10px;
-    
+  
+  /* column droite */
+  .column.side {
+    width: 25%;
+    position: fixed;
+    display: inline;
+    float: right;
+    vertical-align: top;
+  }
+  
+  /*  column centre */
+  .column.middle {
+    width: 75%;
   }
   
   .row:after {
@@ -27,15 +25,53 @@
     display: table;
     clear: both;
   }
-  /* responsivité quand la taille de l'ecran et inferieur a 800px */
-@media screen and (max-width: 800px) {
-  .rightcolumn {   
-    width: 100%;
-    padding: 0;
-	
+
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+    .column.side {
+      position: inherit;
+    }
   }
+  
+ /* ******************************Fin Structuration du document */
+/*Mise en forme du main*/
+ main {
+  padding: 110px 35px ;
 }
+
+/* *********************************************************************************Debut Mise en form du aside bar */
+
+
+/* effet de carte dans l'article */
+.card {
+  background-color: white;
+  word-wrap: break-word;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 4px;
+  
+}
+#livre {
+  width: fit-content;
+  height: 170px;
+}
+.fakeimg {
+  text-align: center;
+}
+.rightcolumn a {
+  text-decoration: none;
+  color: rgb(225, 0, 255);
+  
+}
+h5, h3 {
+  margin-bottom: 2.5px;
+  margin-top: 9px;
+}
+
 /* *********************************************************************************Fin Mise en form du aside bar */
+
 
 /* ************************************************************************Debut Mise en forme des box questions reponses*/
 
@@ -43,6 +79,12 @@
 .faq-section{
     margin: 40px 20px;
     width: auto; 
+}
+h2 {
+  margin-bottom: 0%;
+}
+h4 {
+  font-size: 25px;
 }
 
 /* Masquer les checkbox et les paragraphes */
@@ -81,7 +123,7 @@
 .faq-section label{
     font-size: 1.2em;
     cursor: pointer;
-    width: 60%;
+    width: 100%;
     display: block;
     position: relative;
     padding: 7px 10px;
@@ -134,9 +176,9 @@
 #qst {
     align-items: center;
     color: #ffffff;
-    margin: 40px;
     padding: 20px;
-    width: 90%;
+    margin: 40px 20px;
+    width: auto;
     font-size: 1.2em;
     display: block;
     position: relative;
@@ -148,23 +190,28 @@
 }
 #qst input{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
 }
 #qst button {
-    color: white;
-    cursor: pointer;
-    float: right;
-    border-radius: 20px;
-    padding: 10px;
     margin-top: 10px;
-    width: 130px;
-    background-color: rgb(145, 145, 214);
-    border: 2px solid white;
+    padding: 10px;
+  background-color: rgba(3, 255, 242, 0.368);
+  font-size: 15px;
+  border: 2px solid white;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  border-radius: 4px;
 }
 #qst button:hover {
-    background-color: rgb(200, 18, 161);
+  font-size: 22px;
+  font-weight: 900;
+  
   
 }
-/* ********************************************************* Debut Mise en form du box "posez vos questions"*/
+/* ********************************************************* Fin Mise en form du box "posez vos questions"*/
 
-/* ************************************************************************Debut Mise en forme des box questions reponses*/

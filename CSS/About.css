@@ -1,36 +1,25 @@
 
-
-html {
-  box-sizing: border-box;
-  color: white;
-}
-
+/*************** Toute autre information est herité du parent "index.css"*/
 
 /* ********************Debut Mise en page des cartes d'informations*/
+
+h1 {
+  margin-bottom: 0%;
+}
+p{
+  margin-top: 0%;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 12px;
   background-color: rgba(204, 0, 255, 0.267);
   color: white;
 }
-h1 {
-  background-color: #b10efdea;
-}
+
 .card img {
   height: 300px;
 }
-.about-section {
-    padding: 40px;
-    text-align: center;
-    background-color: #b10efd7a;
-    color: white;
-    margin: 70px 30px;
-    word-wrap: break-word;
-  }
-  .activities {
-    padding: 5px;
-    margin-bottom: 15px;
-  }
+
 
 .container {
     padding: 0 16px;
@@ -52,27 +41,35 @@ h1 {
 .title {
   color: rgb(255, 1, 234);
   font-weight: bolder;
+  text-align: center;
 }
 
 .about-section button {
-  border: none;
-  outline: 0;
-  display: block;
-  padding: 8px;
-  cursor: pointer;
-  width: 100%;
-  color: white;
-  border-radius: 20px;
-  background-color: rgb(145, 145, 214);
-  border: 2px solid white;
+ 
+  padding: 15px;
+  width: 31%;
+  background-color: rgba(3, 255, 242, 0.368);
   font-size: 20px;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  border: 2px solid white;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  float: left;
+  margin: 2px;
+ 
+
+
 }
 
 .about-section button:hover {
-  background-color: rgb(234, 5, 226);
-  font-size: larger;
+  font-size: 22px;
+font-weight: 900;
+}
+
+.about-section a {
+  color: white;
+  text-decoration: none;
 }
 /*Respensivité de la taille de l'ecran des qu'elle est inferieur a 650px*/
 @media screen and (max-width: 650px) {
@@ -81,4 +78,9 @@ h1 {
     display: block;
   }
 }
-/* ********************Debut Mise en page des cartes d'informations*/
+
+/* ********************Fin Mise en page des cartes d'informations*/
+
+
+
+

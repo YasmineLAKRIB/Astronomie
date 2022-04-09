@@ -1,8 +1,45 @@
+/* ******************************Dedut Structuration du document */
 
-/***************************************************************************Debut de la sous bar de navigation*/
-main {
-    padding: 105px 50px 100px 50px;
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* column droite */
+  .column.side {
+    width: 25%;
+    position: fixed;
+    display: inline;
+    float: right;
+  }
+  
+  /*  column centre */
+  .column.middle {
+    width: 75%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+    .column.side {
+      position: inherit;
+    }
+  }
+  
+ /* ******************************Fin Structuration du document */
+
+
+ main {
+  padding: 110px 35px ;
 }
+
 #navblog{
     display: block;
     text-align: center;
@@ -12,9 +49,9 @@ main {
 	display: flex;
 	flex-direction: row;
 	text-align: center;
-    list-style-type: none;
-    margin-bottom: 60px;
-    padding: 0;
+  list-style-type: none;
+  margin-bottom: 45px;
+  padding: 0;
 	font-size: 18px;
 	font-weight: 900;
 	width: fit-content;
@@ -33,34 +70,53 @@ main {
     background-color: rgba(120, 16, 129, 0.616);
 	font-size: larger;
 }
-/***************************************************************************Debut de la sous bar de navigation*/
+
+/***************************************************************/
+
+/*ici on va faire la mise en forme de la sous section creation*/
+
+.creation {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: rgba(240, 9, 182, 0.561);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: larger;
+  margin-bottom: 50px;
+  margin: 25px;
+  }
+section {
+   margin-bottom: 150px;
+}
 
 /*************************************************************** Debut barre de recherche*/
 #recherche {
-	align-items: center;
+	  align-items: center;
     color: #ffffff;
-    margin: 8px auto ;
+    margin: 10px auto;
     padding: 5px;
-    width: 90%;
+    width: 100%;
     font-size: 1.2em;
     display: block;
-    position: relative;
-	align-items: center;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgba(248, 3, 228, 0.383);
     border: 2px solid rgb(255, 6, 234);
 }
 #recherche input {
 	width: 82%;
-    border-radius: 20px;
+  border-radius: 5px;
 	padding: 5px;
+  margin-bottom: 3px;
+  border-color: rgba(5, 5, 48, 0.681);
+  
 }
 
 #recherche button {
     color: white;
     cursor: pointer;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     width: fit-content;
     background-color: rgb(145, 145, 214);
     border: 2px solid white;
@@ -74,28 +130,11 @@ main {
 
 
 
-/*ici on va faire la mise en forme de la sous section creation*/
-
-.creation {
-    display: flex;
-	flex-direction: column;
-	color: #fff;
-	background: rgba(240, 9, 182, 0.561);
-	border-radius: 5px;
-    padding-left: 10px;
-    font-size: larger;
-    margin-bottom: 50px;
-}
- section {
-     margin-bottom: 200px;
- }
-
 /***************************************************************************Debut de la mise en forme de la carte de contenu*/
 
 .blog-card {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem auto;
 	box-shadow: 0 3px 7px -1px rgba(#000, 0.1);
 	margin-bottom: 1.6%;
 	background: white;
@@ -104,17 +143,18 @@ main {
 	border-radius: 5px;
 	overflow: hidden;
 	z-index: 0;
+  margin: 25px;
 
 }
 
 .photo:hover{
 			transform: scale(1.3) rotate(3deg);
 		}
-.meta {
-            position: relative;
-            z-index: 0;
-            height: 200px;
-        }
+    .meta {
+      position: relative;
+      z-index: 0;
+      height: 200px;
+  }
 .photo {
 		position: absolute;
 		top: 0;
@@ -127,9 +167,10 @@ main {
 	}		
 .description {
 		padding: 1rem;
-		background: white;
+		background: rgb(255, 255, 255);
 		position: relative;
 		z-index: 1;
+    
 }
 
 .description	h1, h2 {
@@ -145,21 +186,21 @@ main {
 			font-size: 1rem;
 			font-weight: 300;
 			text-transform: uppercase;
-			color: rgb(66, 56, 56);
+			color: rgb(51, 40, 40);
 			margin-top: 5px;
 		}
 .read-more {
 			text-align: right;
 		}
 .read-more a {
-				color: rgb(149, 0, 255);
+				color: rgb(255, 0, 247);
 				display: inline-block;
 				position: relative;
 				text-decoration: none;
 			}
 .read-more a:hover {
 				font-size: larger;
-				color: rgb(255, 5, 230);
+				color: rgb(218, 5, 255);
 }
 .description .read-more a:hover:after {
 					margin-left: 5px;
@@ -174,7 +215,7 @@ main {
 				content: "";
 				position: absolute;
 				height: 5px;
-				background: pink;
+				background: rgba(57, 53, 54, 0.876);
 				width: 35px;
 				top: -0.75rem;
 				border-radius: 3px;
@@ -187,15 +228,16 @@ main {
   
 /*responsivité quand la taille de l'ecran devient inferieur a 640px*/
 @media (min-width: 640px) {
-max-width: 700px;    
-.meta {
+{ max-width: 700px;
+
+  .meta {
 	flex-basis: 40%;
 	height: auto;
-}
-.description {
+  }
+  .description {
 	flex-basis: 60%;
-}
-.description:before {
+  }
+  .description:before {
 	transform: skewX(-3deg);
 	content: "";
 	background: #fff;
@@ -205,24 +247,53 @@ max-width: 700px;
 	top: 0;
 	bottom: 0;
 	z-index: -1;
-}
-		
-.description.alt {
+  }	
+  .description.alt {
 	flex-direction: row-reverse;
-}
-	
-.details {
+  }
+  .details {
 	padding-left: 25px;
-}
-
-.details {
+  }
+  .details {
 	padding-left: 25px;
-}
-.description:before {
+  }
+   .description:before {
 	left: inherit;
 	right: -10px;
 	transform: skew(3deg);
+  }
+
 }
+}
+/*********************************************************************************** Fin de la carte de contenu*/
+
+
+/* *********************************************************************************Debut Mise en form du aside bar */
+
+
+/* effet de carte dans l'article */
+.card {
+  background-color: white;
+  word-wrap: break-word;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 4px;
+}
+#livre {
+  width: fit-content;
+  height: 170px;
+}
+.fakeimg {
+  text-align: center;
+}
+.rightcolumn a {
+  text-decoration: none;
+  color: rgb(25, 1, 201);
+  
+}
+h5, h3 {
+  margin-bottom: 2.5px;
+  margin-top: 9px;
 }
 
-/*********************************************************************************** Fin de la carte de contenu*/
+/* *********************************************************************************Fin Mise en form du aside bar */

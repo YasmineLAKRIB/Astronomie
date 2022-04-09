@@ -1,147 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
- <link rel="stylesheet" href="/CSS/index.css" />
- <link rel="stylesheet" href="/CSS/Contact.css">
- <meta charset="UTF-8" />
- <title>Astronomy</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/Contact.css">
+    <title>Cosmos</title>
 </head>
 <body>
-
   <header> <!--adumu--><!--L'entete de la page, qui sera prsente dans tous les documents du site web-->
     <a href="#" class="logo">Cosmos</a>
          <nav>
            <ul class="navigation">
-               <li><a href="/HTML/Contact.html">Contact</a></li>
+               <li><a href="/HTML/Contact.html" style=" border: 3px solid white;
+                padding: 10px;">Contact</a></li>
                <li><a href="/HTML/FQA.html">FQA</a></li>
                <li><a href="/HTML/Blog.html">Blog</a></li>
-               <li><a href="/HTML/About.html">About</a></li>
-               <li><a href="#">Home</a></li>
+               <li><a href="/HTML/About.html" >About</a></li>
+               <li><a href="/HTML/index.html">Home</a></li>
                
             </ul>
           </nav>
-   </header>
+  </header>
+
+<main>
+    <div class="row">
+         <div class="column middle" >
+           <section>
+             <div class="creation">
+               <div class="titres">
+                <h2><em>"Sharing is Caring"</em> </h2>
+                <h3>Nous restons a votre disposition !</h3>
+                <p>N'hesitez pas a nous contacter, et meme passer nous voir un de ces jours !</p>
+               </div>
+             </div>
+           </section>
+           <!--**********************************************************************************-->
+           <!--Debut du formulaire de contact-->
+           <section>
+            <form action="">
+              <div class="creation formulaire">
+                <h3>Formulaire de Contact</h3>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Nom et Prenom</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="nom" placeholder="Votre Nom et Prenom.." required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Email</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" id="lname" name="email" placeholder="Votre adresse Email.."required >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Objet</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="objet" placeholder="Objet de l'email.."required >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Message</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Votre message.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <input type="submit" value="Envoyer">
+              </div>
+                  </form>
+           </section>
+           <!--Fin du formulaire de contact-->
+
+           <!--**********************************************************************************-->
+           <section>
+            <div class="creation">
+              <!--Text--> 
+             <div class="titres" style="text-align: center;">
+               <p>Pour recevoir nos newsletters et etre à jour sur nos activités, Exprimez vos desirs en nous envoyant un email !</p>
+               
+               <h4>Merci pour votre <i>VISITE</i></h4>
+             </div>
+           </div>
+           </section>
+
+          </div>
+     </div>
+</main>
 
  <!--**********************************************************************************-->
-
-  <main><!--Contenu de la page-->
-      <!--Box de l'intitulé de la page courrente-->
-      <div class="titres">
-        <h2><em>"Sharing is Caring"</em> </h2>
-        <h3>Nous restons a votre disposition !</h3>
-        <p>N'hesitez pas a nous contacter, et meme passer nous voir un de ces jours !</p>
-      </div>
-
-      <!--Debut du formulaire de contact-->
-      <form action="">
-      <div class="row">
-        <div class="col-25">
-          <label for="fname">Nom et Prenom</label>
+    <footer class="footer-distributed"> <!--Pied de page-->
+        <!--Footer devisé en 3 parties-->
+      
+        <div class="footer-left"><!--Partie 1: Contenant  un raccourci du menu principal -->
+      
+            <h3>C<span>osmos</span></h3>
+      
+            <p class="footer-links">
+                <a href="/HTML/index.html" class="link-1">Home</a>
+                <a href="/HTML/About.html">About</a>
+                <a href="/HTML/Blog.html">Blog</a>
+                <a href="/HTML/FQA.html">FQA</a>
+                <a href="/HTML/Contact.html">Contact</a>
+                
+            </p>
+      
+            <p class="footer-company-name">Cosmos © 2022</p>
         </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="nom" placeholder="Votre Nom et Prenom.." required>
+      
+        <div class="footer-center"> <!--Partie 2: Contenant des extras informations  -->
+      
+            <div> 
+                <i class="fa fa-map"></i>
+                <p> <a href="https://goo.gl/maps/yPjTqJqh1VSWeHya7" target="_blank"  title="Localisation" ><span>CLS Centre de loisirs, Bab Dzair, El Afroun</span> Blida, Algerie</a> </p>
+            </div>
+      
+            <div>
+                <i class="fa fa-phone"></i>
+                <p title="Numero de telephone">0672439818</p>
+            </div>
+      
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="/HTML/Contact.html" title="Email">asa-dz@outlook.com</a></p>
+            </div>
+      
         </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="lname">Email</label>
+      
+        <div class="footer-right"><!--Partie 3: Contenant Une intro des proprietaires + liens reseaux sociaux  -->
+      
+            <p class="footer-company-about">
+                <span>Notre Club</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+      
+            <div class="footer-icons">
+      
+                <a href="https://www.facebook.com/AsaBlida" target="_blank" >Facebook</a>
+                <a href="https://www.instagram.com/astronomy_clubdz/?fbclid=IwAR3DImOD0NxJAgZaMIGi8kZm3lxVkifRQ_9_A5-Tq3BTB2SKJBvlTGu05gM" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/channel/UCFRiodguCAb7W0Y1y10Z3kg" target="_blank">Youtube</a>
+                
+      
+            </div>
+      
         </div>
-        <div class="col-75">
-          <input type="email" id="lname" name="email" placeholder="Votre adresse Email.."required >
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="lname">Objet</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="lname" name="objet" placeholder="Objet de l'email.."required >
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="subject">Message</label>
-        </div>
-        <div class="col-75">
-          <textarea id="subject" name="subject" placeholder="Votre message.." style="height:200px"></textarea>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <input type="submit" value="Envoyer">
-      </div>
-       </form>
-      <!--Fin du formulaire de contact-->
-
-      <!--Text--> 
-      <div class="titres">
-        <p>Pour recevoir nos newsletters et etre a jour sur nos activités</p>
-        <p>Exprimez votre desir en nous envoyant un email</p>
-      </div>
-      <!--Text--> 
-      <div class="titres">
-        <p>Merci pour votre <i>VISITE</i></p>
-      </div>
-
-   </main>
-
-    <!--**********************************************************************************-->
- <footer class="footer-distributed"> <!--Pied de page-->
-  <!--Footer devisé en 3 parties-->
-
-  <div class="footer-left"><!--Partie 1: Contenant  un raccourci du menu principal -->
-
-      <h3>C<span>osmos</span></h3>
-
-      <p class="footer-links">
-          <a href="/HTML/index.html" class="link-1">Home</a>
-          <a href="/HTML/About.html">About</a>
-          <a href="/HTML/Blog.html">Blog</a>
-          <a href="/HTML/FQA.html">FQA</a>
-          <a href="/HTML/Contact.html">Contact</a>
-          
-      </p>
-
-      <p class="footer-company-name">Cosmos © 2022</p>
-  </div>
-
-  <div class="footer-center"> <!--Partie 2: Contenant des extras informations  -->
-
-      <div> 
-          <i class="fa fa-map"></i>
-          <p> <a href="https://goo.gl/maps/yPjTqJqh1VSWeHya7" target="_blank"  title="Localisation" ><span>CLS Centre de loisirs, Bab Dzair, El Afroun</span> Blida, Algerie</a> </p>
-      </div>
-
-      <div>
-          <i class="fa fa-phone"></i>
-          <p title="Numero de telephone"> 0672439818</p>
-      </div>
-
-      <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="/HTML/Contact.html" title="Email">asa-dz@outlook.com</a></p>
-      </div>
-
-  </div>
-
-  <div class="footer-right"><!--Partie 3: Contenant Une intro des proprietaires + liens reseaux sociaux  -->
-
-      <p class="footer-company-about">
-          <span>Notre Club</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-      </p>
-
-      <div class="footer-icons">
-
-          <a href="https://www.facebook.com/AsaBlida" target="_blank" >Facebook</a>
-          <a href="https://www.instagram.com/astronomy_clubdz/?fbclid=IwAR3DImOD0NxJAgZaMIGi8kZm3lxVkifRQ_9_A5-Tq3BTB2SKJBvlTGu05gM" target="_blank">Instagram</a>
-          <a href="https://www.youtube.com/channel/UCFRiodguCAb7W0Y1y10Z3kg" target="_blank">Youtube</a>
-          
-
-      </div>
-
-  </div>
-
-  </footer>
+      
+      </footer>
 </body>
 </html>

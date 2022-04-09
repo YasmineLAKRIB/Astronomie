@@ -1,249 +1,261 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
- <link rel="stylesheet" href="/CSS/Blog.css" />
- <link rel="stylesheet" href="/CSS/index.css" />
- <link rel="stylesheet" href="/CSS/FAQ.css">
- <meta charset="UTF-8" />
- <title>Astronomy</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/Blog.css">
+    <title>Cosmos</title>
 </head>
 <body>
-<header> <!--adumu--><!--L'entete de la page, qui sera prsente dans tous les documents du site web-->
-    <a href="#" class="logo">Cosmos</a>
-         <nav>
-           <ul class="navigation">
-               <li><a href="/HTML/Contact.html">Contact</a></li>
-               <li><a href="/HTML/FQA.html">FQA</a></li>
-               <li><a href="#">Blog</a></li>
-               <li><a href="/HTML/About.html">About</a></li>
-               <li><a href="/HTML/index.html">Home</a></li>
-               
-            </ul>
-          </nav>
-</header>
+    <header> <!--adumu--><!--L'entete de la page, qui sera prsente dans tous les documents du site web-->
+        <a href="#" class="logo">Cosmos</a>
+             <nav>
+               <ul class="navigation">
+                   <li><a href="/HTML/Contact.html">Contact</a></li>
+                   <li><a href="/HTML/FQA.html">FQA</a></li>
+                   <li><a href="/HTML/Blog.html" style=" border: 3px solid white;
+                    padding: 10px;">Blog</a></li>
+                   <li><a href="/HTML/About.html">About</a></li>
+                   <li><a href="/HTML/index.html">Home</a></li>
+                   
+                </ul>
+              </nav>
+    </header>
 
- <main> <!--Contenu de la page courente le "Blog"-->
-      <nav id="navblog"> <!--La sous bar de navigation dans le contenu du blog-->
-        <ul class="ulblog">
-            <li><a href="#1">Debut de l'Astronomie</a></li>
-            <li><a href="#2">Les Galaxies </a></li>
-            <li><a href="#3">Phénomènes cosmiques</a></li>
-         </ul>
-       </nav>
 
-      <aside> <!--aside contenant des infos suplementaires-->
-          <div class="rightcolumn">
-            <div class="card">
-               <h2>Etoile et constellations</h2>
-               <div class="fakeimg">  <img src="" alt="etoile"></div>
-               <p>A.Benhamouda, un ecrivain algerien..</p>
-             </div>
-            <div class="card"> <!--Contenu du box "Liens utiles"-->
-             <h3>Liens Utiles</h3>
-             <div class="fakeimg"><a href="https://www.nasa.gov/" target="_blank" style="text-decoration: none; color:rgb(242, 0, 255)"> >> Astronomy in the world</a></div>
-             <div class="fakeimg"><a href="https://www.craag.dz/" target="_blank" style="text-decoration: none; color:rgb(242, 0, 255)"> >> Astronomy in Algeria</a></div>
+<main>
+
+    <div class="row">
+        <div class="column middle">
+            <nav id="navblog"> <!--La sous bar de navigation dans le contenu du blog-->
+                <ul class="ulblog">
+                    <li><a href="#1">Debut de l'Astronomie</a></li>
+                    <li><a href="#2">Les Galaxies </a></li>
+                    <li><a href="#3">Phénomènes cosmiques</a></li>
+                 </ul>
+             </nav>
+            
+             <div class="creation"> <!--Titre de la page courente-->
+                <h2>Explorez Un Monde sans frontieres...</h2>
             </div>
-          <div class="card">
-            <h3>Qui sommes nous</h3>
-            <a href="/HTML/About.html" target="_blank"style="text-decoration: none; color:rgb(242, 0, 255)">Une Association d'Astronimie ...</a>
-          </div>
+      
+            <div class="creation"><!--Bar de recherche-->
+              <div id="recherche">
+                <label for="search">Entrez votre recherche :</label>
+                <input type="search" name="recherche" placeholder="recherche" id="search"/>
+                <button>Rechercher</button>
+               </div>
+             </div>
+            
+            <section id="1"> <!--Section du premier theme-->
+              <article>
+                  <div class="creation" >
+                      <p>Astronomie - Définition et Explications</p>
+                  </div>
+      
+                    <div class="blog-card">
+                      <div class="meta">
+                        <div class="photo" style="background-image: url(/IMAGES/BublePye\ on\ Twitter.png)"></div>
+                      </div>
+      
+                      <div class="description">
+                        <h1>C'est Quoi l'Astronomie</h1>
+                        <h2>La science du ciel</h2>
+                        <p> L’astronomie est la science de l’observation des astres, cherchant à expliquer leur origine, leur évolution, leurs propriétés physiques et chimiques...</p>
+                        <p class="read-more">
+                          <a href="/HTML/Articles/Article.html">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+      
+                    <div class="blog-card">
+                      <div class="meta">
+                        <div class="photo" style="background-image: url(/IMAGES/galaxy/5.jpg)"></div>
+                      </div>
+      
+                      <div class="description">
+                        <h1>La théorie du Big Bang</h1>
+                        <h2> Myth ou Verité ?!</h2>
+                        <p> D’où venons-nous ? La réponse à une question que tout le monde s’est posée au moins une fois réside potentiellement dans la fameuse théorie du Big Bang. Éclairage sur ce modèle cosmologique et ce que nous pensons connaître des origines de l’Univers.</p>
+                        <p class="read-more">
+                          <a href="/HTML/Articles/Article2.html">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+                  
+      
+              </article>
+            </section>
+      
+            <section id="2"> <!--Section du deuxieme theme-->
+              <article>
+                  <div class="creation" >
+                      <p>Les Galaxies </p>
+                  </div>
+      
+                    <div class="blog-card">
+                      <div class="meta">
+                        <div class="photo" style="background-image: url(/IMAGES/galaxy/8.jpg)"></div>
+                      </div>
+      
+                      <div class="description">
+                        <h1>Les galaxies : histoire et classification</h1>
+                        <h2>PHÉNOMÈNES CÉLESTES</h2>
+                        <p> L’astronomie est la science de l’observation des astres, cherchant à expliquer leur origine, leur évolution, leurs propriétés physiques et chimiques...</p>
+                        <p class="read-more">
+                          <a href="/HTML/Articles/Article3.html">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+      
+                    <div class="blog-card">
+                      <div class="meta">
+                        <div class="photo" style="background-image: url(/IMAGES/galaxy/3.jpg)"></div>
+                      </div>
+      
+                      <div class="description">
+                        <h1>La Voie lactée</h1>
+                        <h2> notre galaxie</h2>
+                        <p>Que ce soit les grecques, les persans ou les indiens d’Amérique, la plupart des peuples de la Terre ont développés un système de mythologie autour du ciel. Dans laquelle, la bande blanche que l’on observe par les chaudes nuit d’été prenait une place centrale. Faisons la lumière sur cette ce voile blanc qui n’est autre que la Voie lactée !</p>
+                        <p class="read-more">
+                          <a href="/HTML/Articles/Article4.html">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+                  
+      
+              </article>
+            </section>
+      
+            <section id="3"> <!--Section du troixieme theme-->
+              <article>
+                  <div class="creation" >
+                      <p>Phénomènes cosmiques</p>
+                  </div>
+      
+                    <div class="blog-card">
+                      <div class="meta">
+                        <div class="photo" style="background-image: url(/IMAGES/galaxy/pexels-drew-rae-580679.jpg)"></div>
+                      </div>
+      
+                      <div class="description">
+                        <h1>Les éclipses </h1>
+                        <h2>solaire et lunaire</h2>
+                        <p> ​Une éclipse est la disparition, totale ou partielle, d'un astre qui cesse d'être visible lorsqu'un autre corps céleste se positionne entre lui et un observateur....</p>
+                        <p class="read-more">
+                          <a href="/HTML/Articles/Article5.html">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+      
+                    <div class="blog-card">
+                      <div class="meta">
+                        <div class="photo" style="background-image: url(/IMAGES/trou\ noir.jpg)"></div>
+                      </div>
+      
+                      <div class="description">
+                        <h1>Les trous noirs</h1>
+                        <h2> La decouverte du siecle</h2>
+                        <p> Un trou noir est une région de l'espace dont le champ gravitationnel est si intense qu'il empêche toute forme de matière...</p>
+                        <p class="read-more">
+                          <a href="/HTML/Articles/Article6.html">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+                  
+      
+              </article>
+            </section>
+
         </div>
 
-      </aside> 
 
-      <div class="creation"> <!--Titre de la page courente-->
-          <h2>Explorez Un Monde sans frontieres...</h2>
-      </div>
+        <div class="column side" >
+            <aside> <!--aside contenant des infos suplementaires-->
+                <div class="rightcolumn">
+                    
+                  <div class="card">
+                     <div class="fakeimg">  <img src="/IMAGES/night-sky-almanac-0969198.webp" alt="etoile" id="livre"></div>
+                     <h5>Night Sky Almanac: A stargazer's guide to 2021 by Royal Observatory Greenwich</h5>
+                     <a href="https://www.ebay.co.uk/itm/353886256876?_trkparms=ispr%3D1&hash=item526543beec%3Ag%3AUYMAAOSwRFZh-SAT&amdata=enc%3AAQAGAAABcJKNSG73Rh8YXrWyZgE%2BiFZH5cnbvblmtqhHlnxs45hsGw4Q3NWgOtY9nChaU9Y7NYkCGG7gbhZlSdtzwwPxA%2FH5Hy3HSiZMTssihA7Q9UUlgkhEOwpUaMXtU1kDqfr2PcLxfXLrjaAc7BTww00A3M6nvBw42h9EW7ZKIo208lg8iM1PlqIVlq5%2Ft61QhZ541wWrV%2BN4TZqjjuRAlJRY7U7uCSWSIKFFH%2BKtvhAZcZpnsUxesx2QRds1SBnMvYJ%2BSJd4yn2HvBMHd1C%2F1VKSiIYvJP8%2FV5web5bM4RjSmg0yCG9g28XoUUMVsMEB%2FwHPzv0JKOAN5rs2ZWS3kzBvdYiA00PpiOo9De6Y7ahHDcrpns49R66YPmocw%2BO2eHWihMGKgPB3N9imxUAUjrrqtzAC8GKayHHj34gtYN9EVc10elZU%2BdFPQAs3hiE7X9tTHNEWOWIPG6EQ7vKKWlrlGGjaBtsqNhQl7OXys%2BKI3xJE&mkcid=1&mkevt=1&mkrid=710-53481-19255-0&campid=5338687700&toolid=10001&customid=1306_-7170_57951216">Acheter le livre</a>
+                   </div>
 
-      <div class="creation"><!--Bar de recherche-->
-        <div id="recherche">
-          <label for="search">Entrez votre recherche :</label>
-          <input type="search" name="recherche" placeholder="recherche" id="search"/>
-          <button>recherche</button>
-         </div>
-       </div>
+                  <div class="card"> <!--Contenu du box "Liens utiles"-->
+                   <h3>Liens Utiles</h3>
+                   <div ><a href="https://www.nasa.gov/" target="_blank" > Astronomy in the world</a></div>
+                   <div><a href="https://www.craag.dz/" target="_blank"> Astronomy in Algeria</a></div>
+                  </div>
+
+                  <div class="card">
+                   <h3>Qui sommes nous</h3>
+                   <a href="/HTML/About.html" target="_blank"style="text-decoration: none; color:rgb(242, 0, 255)">Visiter About...</a>
+                   </div>
+              </div>
       
-      <section id="1"> <!--Section du premier theme-->
-        <article>
-            <div class="creation" >
-                <p>Astronomie - Définition et Explications</p>
+            </aside>
+        </div>
+      </div>
+</main>
+
+
+    <footer class="footer-distributed"> <!--Pied de page-->
+        <!--Footer devisé en 3 parties-->
+      
+        <div class="footer-left"><!--Partie 1: Contenant  un raccourci du menu principal -->
+      
+            <h3>C<span>osmos</span></h3>
+      
+            <p class="footer-links">
+                <a href="/HTML/index.html" class="link-1">Home</a>
+                <a href="/HTML/About.html">About</a>
+                <a href="/HTML/Blog.html">Blog</a>
+                <a href="/HTML/FQA.html">FQA</a>
+                <a href="/HTML/Contact.html">Contact</a>
+                
+            </p>
+      
+            <p class="footer-company-name">Cosmos © 2022</p>
+        </div>
+      
+        <div class="footer-center"> <!--Partie 2: Contenant des extras informations  -->
+      
+            <div> 
+                <i class="fa fa-map"></i>
+                <p> <a href="https://goo.gl/maps/yPjTqJqh1VSWeHya7" target="_blank"  title="Localisation" ><span>CLS Centre de loisirs, Bab Dzair, El Afroun</span> Blida, Algerie</a> </p>
             </div>
-
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style="background-image: url(/IMAGES/BublePye\ on\ Twitter.png)"></div>
-                </div>
-
-                <div class="description">
-                  <h1>C'est Quoi l'Astronomie</h1>
-                  <h2>La science du ciel</h2>
-                  <p> L’astronomie est la science de l’observation des astres, cherchant à expliquer leur origine, leur évolution, leurs propriétés physiques et chimiques...</p>
-                  <p class="read-more">
-                    <a href="/HTML/Articles/Article.html">Read More</a>
-                  </p>
-                </div>
-              </div>
-
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style="background-image: url(/IMAGES/bigbang.jpg)"></div>
-                </div>
-
-                <div class="description">
-                  <h1>La théorie du Big Bang</h1>
-                  <h2> Myth ou Verité ?!</h2>
-                  <p> D’où venons-nous ? La réponse à une question que tout le monde s’est posée au moins une fois réside potentiellement dans la fameuse théorie du Big Bang. Éclairage sur ce modèle cosmologique et ce que nous pensons connaître des origines de l’Univers.</p>
-                  <p class="read-more">
-                    <a href="/HTML/Articles/Article2.html">Read More</a>
-                  </p>
-                </div>
-              </div>
-            
-
-        </article>
-      </section>
-
-      <section id="2"> <!--Section du deuxieme theme-->
-        <article>
-            <div class="creation" >
-                <p>Les Galaxies </p>
+      
+            <div>
+                <i class="fa fa-phone"></i>
+                <p title="Numero de telephone">0672439818</p>
             </div>
-
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style="background-image: url(/IMAGES/galaxy/8.jpg)"></div>
-                </div>
-
-                <div class="description">
-                  <h1>Les galaxies : histoire et classification</h1>
-                  <h2>PHÉNOMÈNES CÉLESTES</h2>
-                  <p> L’astronomie est la science de l’observation des astres, cherchant à expliquer leur origine, leur évolution, leurs propriétés physiques et chimiques...</p>
-                  <p class="read-more">
-                    <a href="/HTML/Articles/Article3.html">Read More</a>
-                  </p>
-                </div>
-              </div>
-
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style="background-image: url(/IMAGES/galaxy/3.jpg)"></div>
-                </div>
-
-                <div class="description">
-                  <h1>La Voie lactée</h1>
-                  <h2> notre galaxie</h2>
-                  <p>Que ce soit les grecques, les persans ou les indiens d’Amérique, la plupart des peuples de la Terre ont développés un système de mythologie autour du ciel. Dans laquelle, la bande blanche que l’on observe par les chaudes nuit d’été prenait une place centrale. Faisons la lumière sur cette ce voile blanc qui n’est autre que la Voie lactée !</p>
-                  <p class="read-more">
-                    <a href="/HTML/Articles/Article4.html">Read More</a>
-                  </p>
-                </div>
-              </div>
-            
-
-        </article>
-      </section>
-
-      <section id="3"> <!--Section du troixieme theme-->
-        <article>
-            <div class="creation" >
-                <p>Phénomènes cosmiques</p>
+      
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="/HTML/Contact.html" title="Email">asa-dz@outlook.com</a></p>
             </div>
-
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style="background-image: url(/IMAGES/galaxy/pexels-drew-rae-580679.jpg)"></div>
-                </div>
-
-                <div class="description">
-                  <h1>Les éclipses </h1>
-                  <h2>solaire et lunaire</h2>
-                  <p> ​Une éclipse est la disparition, totale ou partielle, d'un astre qui cesse d'être visible lorsqu'un autre corps céleste se positionne entre lui et un observateur....</p>
-                  <p class="read-more">
-                    <a href="/HTML/Articles/Article5.html">Read More</a>
-                  </p>
-                </div>
-              </div>
-
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style="background-image: url(/IMAGES/blackhole.jpg)"></div>
-                </div>
-
-                <div class="description">
-                  <h1>Les trous noirs</h1>
-                  <h2> La decouverte du siecle</h2>
-                  <p> Un trou noir est une région de l'espace dont le champ gravitationnel est si intense qu'il empêche toute forme de matière...</p>
-                  <p class="read-more">
-                    <a href="/HTML/Articles/Article6.html">Read More</a>
-                  </p>
-                </div>
-              </div>
-            
-
-        </article>
-      </section>
-
- </main>
-
-
-
- <footer class="footer-distributed"> <!--Pied de page-->
-  <!--Footer devisé en 3 parties-->
-
-  <div class="footer-left"><!--Partie 1: Contenant  un raccourci du menu principal -->
-
-      <h3>C<span>osmos</span></h3>
-
-      <p class="footer-links">
-          <a href="/HTML/index.html" class="link-1">Home</a>
-          <a href="/HTML/About.html">About</a>
-          <a href="/HTML/Blog.html">Blog</a>
-          <a href="/HTML/FQA.html">FQA</a>
-          <a href="/HTML/Contact.html">Contact</a>
-          
-      </p>
-
-      <p class="footer-company-name">Cosmos © 2022</p>
-  </div>
-
-  <div class="footer-center"> <!--Partie 2: Contenant des extras informations  -->
-
-      <div> 
-          <i class="fa fa-map"></i>
-          <p> <a href="https://goo.gl/maps/yPjTqJqh1VSWeHya7" target="_blank"  title="Localisation" ><span>CLS Centre de loisirs, Bab Dzair, El Afroun</span> Blida, Algerie</a> </p>
-      </div>
-
-      <div>
-          <i class="fa fa-phone"></i>
-          <p title="Numero de telephone">0672439818</p>
-      </div>
-
-      <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="/HTML/Contact.html" title="Email">asa-dz@outlook.com</a></p>
-      </div>
-
-  </div>
-
-  <div class="footer-right"><!--Partie 3: Contenant Une intro des proprietaires + liens reseaux sociaux  -->
-
-      <p class="footer-company-about">
-          <span>Notre Club</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-      </p>
-
-      <div class="footer-icons">
-
-          <a href="https://www.facebook.com/AsaBlida" target="_blank" >Facebook</a>
-          <a href="https://www.instagram.com/astronomy_clubdz/?fbclid=IwAR3DImOD0NxJAgZaMIGi8kZm3lxVkifRQ_9_A5-Tq3BTB2SKJBvlTGu05gM" target="_blank">Instagram</a>
-          <a href="https://www.youtube.com/channel/UCFRiodguCAb7W0Y1y10Z3kg" target="_blank">Youtube</a>
-          
-
-      </div>
-
-  </div>
-
-</footer>
-
+      
+        </div>
+      
+        <div class="footer-right"><!--Partie 3: Contenant Une intro des proprietaires + liens reseaux sociaux  -->
+      
+            <p class="footer-company-about">
+                <span>Notre Club</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+      
+            <div class="footer-icons">
+      
+                <a href="https://www.facebook.com/AsaBlida" target="_blank" >Facebook</a>
+                <a href="https://www.instagram.com/astronomy_clubdz/?fbclid=IwAR3DImOD0NxJAgZaMIGi8kZm3lxVkifRQ_9_A5-Tq3BTB2SKJBvlTGu05gM" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/channel/UCFRiodguCAb7W0Y1y10Z3kg" target="_blank">Youtube</a>
+                
+      
+            </div>
+      
+        </div>
+      
+      </footer>
 </body>
 </html>

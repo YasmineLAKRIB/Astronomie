@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
- <link rel="stylesheet" href="/CSS/index.css" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
- <meta charset="UTF-8" />
- <title>Cosmos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/essey.css">
+    <title>Cosmos</title>
 </head>
-
 <body>
- <header> <!--adumu--><!--L'entete de la page, qui sera prsente dans tous les documents du site web-->
-     <a href="#" class="logo">Cosmos</a>
-          <nav>
-            <ul class="navigation">
-                <li><a href="/HTML/Contact.html">Contact</a></li>
-                <li><a href="/HTML/FQA.html">FQA</a></li>
-                <li><a href="/HTML/Blog.html">Blog</a></li>
-                <li><a href="/HTML/About.html">About</a></li>
-                <li><a href="/HTML/index.html">Home</a></li>
-                
-             </ul>
-           </nav>
- </header>
+    <header> <!--adumu--><!--L'entete de la page, qui sera prsente dans tous les documents du site web-->
+        <a href="#" class="logo">Cosmos</a>
+             <nav>
+               <ul class="navigation">
+                   <li><a href="/HTML/Contact.html">Contact</a></li>
+                   <li><a href="/HTML/FQA.html">FQA</a></li>
+                   <li><a href="/HTML/Blog.html">Blog</a></li>
+                   <li><a href="/HTML/About.html">About</a></li>
+                   <li><a href="/HTML/index.html">Home</a></li>
+                   
+                </ul>
+              </nav>
+    </header>
 
 
- <main> <!--Contenu de la page principale-->
-     <section class="intro"> <!--Section de bienvenue et orientation + overview sur le theme du siteweb-->
-         <div class="wlc" id="bienvenue">
-             <h1>Cosmos</h1>
-         </div>
-         <div class="wlc" id="slogan">
-             <h3>Votre voyage vers l'espace ! Le macro monde enchanté </h3>
-         </div>
-         <div class="wlc" id="discover">
-            <p><button class="blog">Attachez vos ceintures, on decole vers la science de l'Astronomie</button></p>
-         </div>
+<main>
+    <div class="row">
+        <div class="column middle" >
+           <!--Section de bienvenue et orientation + overview sur le theme du siteweb-->
+            
+            <section class="intro">
+             <div class="wlc creation"> <!--Titre de la page courente-->
+                <h2>Cosmos</h2>
+             </div>
+      
+            <div class="creation">
+              <div  id="slogan">
+                <h3>Votre voyage vers l'espace ! Le macro monde enchanté </h3>
+            </div>
+             </div>
+            
+             <div class="creation">
+              <div  id="discover">
+                <p><button class="blog">Attachez vos ceintures, on decole vers la science de l'Astronomie</button></p>
+             </div>
+             </div>
+            </section>
+            
          
-         <!--**********************************************************************************-->
-         <div class="wlc">
-            <div class="CSSgal"> <!-- Un slider d'images -->
+            <!--**********************************************************************************-->
+            <section> <!--Slider d'images-->
+              <div class=" creation">
+               <div class="CSSgal"> <!-- Un slider d'images -->
+   
+                   <!-- les 4 slides  -->
+                   <s id="s1"></s> 
+                   <s id="s2"></s>
+                   <s id="s3"></s>
+                   <s id="s4"></s>
+                 
+                   <div class="slider">
 
-                <!-- les 4 slides  -->
-                <s id="s1"></s> 
-                <s id="s2"></s>
-                <s id="s3"></s>
-                <s id="s4"></s>
-              
-                <div class="slider">
-
-                    <div > <!--Contenu du premier slide-->
+                    <div id="A"> <!--Contenu du premier slide-->
                     <h2>Le monde de l'espace</h2>
                     <h4>Cosmos, voie lactée, planetes... et l'inconnu</h4>
                     
@@ -55,11 +69,11 @@
                      <figure>
                      <div class="responsive">
                       <div class="gallery">
-                        <a target="_blank" href="/IMAGES/galaxy/6.jpg">
-                          <img src="/IMAGES/galaxy/6.jpg" alt="Espace" width="600" height="400">
+                        <a target="_blank" href="/IMAGES/galaxy/pexels-delcho-dichev-517884.jpg">
+                          <img src="/IMAGES/galaxy/pexels-delcho-dichev-517884.jpg" alt="Espace" width="600" height="400">
                         </a>
                         <figcaption>
-                        <div class="desc">Poussiere dans l'espace</div>
+                        <div class="desc">Cosmos </div>
                         </figcaption>
                       </div>
                      </div>
@@ -69,8 +83,8 @@
                      <figure>
                       <div class="responsive">
                        <div class="gallery">
-                         <a target="_blank" href="/IMAGES/galaxy/5.jpg">
-                           <img src="/IMAGES/galaxy/5.jpg" alt="Cinque Terre" width="600" height="400">
+                         <a target="_blank" href="/IMAGES/galaxy/pexels-markus-partoll-10131035.jpg">
+                           <img src="/IMAGES/galaxy/pexels-markus-partoll-10131035.jpg" alt="Cinque Terre" width="600" height="400">
                          </a>
                          <figcaption>
                          <div class="desc">Etoiles</div>
@@ -83,11 +97,11 @@
                      <figure>
                      <div class="responsive">
                       <div class="gallery">
-                        <a target="_blank" href="/IMAGES/galaxy/7.jpg">
-                          <img src="/IMAGES/galaxy/7.jpg" alt="Cinque Terre" width="600" height="400">
+                        <a target="_blank" href="/IMAGES/galaxy/pexels-drew-rae-580679.jpg">
+                          <img src="/IMAGES/galaxy/pexels-drew-rae-580679.jpg" alt="Cinque Terre" width="600" height="400">
                         </a>
                         <figcaption>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Eclipse</div>
                         </figcaption>
                       </div>
                      </div>
@@ -97,11 +111,11 @@
                      <figure>
                      <div class="responsive">
                       <div class="gallery">
-                        <a target="_blank" href="/IMAGES/galaxy/cosmique dust.jpg">
-                          <img src="/IMAGES/galaxy/cosmique dust.jpg" alt="Cinque Terre" width="600" height="400">
+                        <a target="_blank" href="/IMAGES/galaxy/pexels-markus-partoll-10131035.jpg">
+                          <img src="/IMAGES/galaxy/pexels-markus-partoll-10131035.jpg" alt="Cinque Terre" width="600" height="400">
                         </a>
                         <figcaption>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Etoiles</div>
                         </figcaption>
                       </div>
                      </div>
@@ -110,70 +124,72 @@
                      <!--Description du slide-->
                     <div class="clearfix"></div>
                     <div style="padding:6px;" class="why">
-                      <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-                      <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+                      <p>Le Cosmos est une fleur, il est également l’espace, les galaxies, le monde entier… Il est tout à la fois et se définit comme notre univers observable. A l’image de la nature sur Terre, il est la nature de l’univers. Il s’oppose au chaos et se représente comme étant quelque chose d’ordonné, aboutissant à la création de nouveaux mondes. Il est à l’origine d’un phénomène complexe et mystérieux appelé Big Bang, décrit comme l’horizon de notre savoir scientifique et à partir duquel notre univers gonfle en permanence.</p>
                     </div>
                     </div> 
 
-                    <div > <!--Contenu du deuxieme slide-->
+                    <div id="B"> <!--Contenu du deuxieme slide-->
                       <h2>Le monde de l'espace</h2>
                       <h4>Apollo  : piège mortel pour trois astronautes</h4>
-                      
-                       <!--Carte avec Description-->
-                       <figure>
-                       <div class="responsive">
-                        <div class="gallery">
-                          <a target="_blank" href="/IMAGES/Astronotes/1.jpg">
-                            <img src="/IMAGES/Astronotes/1.jpg" alt="Dans l'espace" width="600" height="400">
-                          </a>
-                          <figcaption>
-                          <div class="desc">Astronaute en mission</div>
-                          </figcaption>
-                        </div>
-                       </div>
-                       </figure>
 
-                       <!--Carte avec Description-->
-                       <figure>
+                      <!--Carte avec Description-->
+                      <figure>
                         <div class="responsive">
                          <div class="gallery">
                            <a target="_blank" href="/IMAGES/Astronotes/7.jpg">
-                             <img src="/IMAGES/Astronotes/7.jpg" alt="Dand l'espace" width="600" height="400">
+                             <img src="/IMAGES/Astronotes/7.jpg" alt="astronaute" width="600" height="400">
                            </a>
                            <figcaption>
-                           <div class="desc">Quotidien d'une astronaute</div>
+                           <div class="desc">Astronaute</div>
                            </figcaption>
                          </div>
                         </div>
-                       </figure>
-
-                       <!--Carte avec Description-->
-                       <figure>
-                       <div class="responsive">
-                        <div class="gallery">
-                          <a target="_blank" href="/IMAGES/Astronotes/5.jpg">
-                            <img src="/IMAGES/Astronotes/5.jpg" alt="Dans l'espace" width="600" height="400">
-                          </a>
-                          <figcaption>
-                          <div class="desc">Astronaute en mission</div>
-                          </figcaption>
+                        </figure>
+ 
+                        <!--Carte avec Description-->
+                        <figure>
+                         <div class="responsive">
+                          <div class="gallery">
+                            <a target="_blank" href="/IMAGES/Astronotes/1.jpg">
+                              <img src="/IMAGES/Astronotes/1.jpg" alt="astronaute" width="600" height="400">
+                            </a>
+                            <figcaption>
+                            <div class="desc">Mission</div>
+                            </figcaption>
+                          </div>
+                         </div>
+                        </figure>
+ 
+                        <!--Carte avec Description-->
+                        <figure>
+                        <div class="responsive">
+                         <div class="gallery">
+                           <a target="_blank" href="/IMAGES/Astronotes/2.jpg">
+                             <img src="/IMAGES/Astronotes/2.jpg" alt="astronaute" width="600" height="400">
+                           </a>
+                           <figcaption>
+                           <div class="desc">Vue sur terre</div>
+                           </figcaption>
+                         </div>
                         </div>
-                       </div>
-                       </figure>
-
-                       <!--Carte avec Description-->
-                       <figure>
-                       <div class="responsive">
-                        <div class="gallery">
-                          <a target="_blank" href="/IMAGES/Astronotes/2.jpg">
-                            <img src="/IMAGES/Astronotes/2.jpg" alt="Dans l'espace" width="600" height="400">
-                          </a>
-                          <figcaption>
-                          <div class="desc">Vue sur terre depuis l'espace</div>
-                          </figcaption>
+                        </figure>
+ 
+                        <!--Carte avec Description-->
+                        <figure>
+                        <div class="responsive">
+                         <div class="gallery">
+                           <a target="_blank" href="/IMAGES/Planet/venus.jpg">
+                             <img src="/IMAGES/Astronotes/3.jpg" alt="astronaute" width="600" height="400">
+                           </a>
+                           <figcaption>
+                           <div class="desc">Mission</div>
+                           </figcaption>
+                         </div>
                         </div>
-                       </div>
-                       </figure>
+                        </figure>
+                      
+
+                
                       
                        <!--Description du slide-->
                       <div class="clearfix"></div>
@@ -183,7 +199,7 @@
                       </div>
                     </div> 
 
-                    <div > <!--Contenu du troisieme slide-->
+                    <div id="C"> <!--Contenu du troisieme slide-->
                       <h2>Le monde de l'espace</h2>
                       <h4>Définition d'une planète</h4>
                       
@@ -256,44 +272,16 @@
                       </div>
                     </div> 
 
-                    <div > <!--Contenu du quatrieme slide-->
+                    <div id="C"> <!--Contenu du quatrieme slide-->
                       <h2>Le monde de l'espace</h2>
-                      <h4>Les aurores polaires</h4>
+                      <h4>Les Aurores</h4>
                       
                        <!--Carte avec Description-->
                        <figure>
                        <div class="responsive">
                         <div class="gallery">
-                          <a target="_blank" href="/IMAGES/Aurores/pexels-frans-van-heerden-624015.jpg">
-                            <img src="/IMAGES/Aurores/pexels-frans-van-heerden-624015.jpg" alt="Aurores" width="600" height="400">
-                          </a>
-                          <figcaption>
-                          <div class="desc">Aurores Vert-d'eau</div>
-                          </figcaption>
-                        </div>
-                       </div>
-                       </figure>
-
-                       <!--Carte avec Description-->
-                       <figure>
-                        <div class="responsive">
-                         <div class="gallery">
-                           <a target="_blank" href="/IMAGES/Aurores/pexels-stein-egil-liland-1933317.jpg">
-                             <img src="/IMAGES/Aurores/pexels-stein-egil-liland-1933317.jpg" alt="Aurores" width="600" height="400">
-                           </a>
-                           <figcaption>
-                           <div class="desc">Aurores vertes</div>
-                           </figcaption>
-                         </div>
-                        </div>
-                       </figure>
-
-                       <!--Carte avec Description-->
-                       <figure>
-                       <div class="responsive">
-                        <div class="gallery">
-                          <a target="_blank" href="/IMAGES/Aurores/pexels-pixabay-258112.jpg">
-                            <img src="/IMAGES/Aurores/pexels-pixabay-258112.jpg" alt="Aurores" width="600" height="400">
+                          <a target="_blank" href="/IMAGES/Aurores/pexels-visit-greenland-360912.jpg">
+                            <img src="/IMAGES/Aurores/pexels-pixabay-258112.jpg" alt="aurores" width="600" height="400">
                           </a>
                           <figcaption>
                           <div class="desc">Aurores boreales</div>
@@ -304,13 +292,41 @@
 
                        <!--Carte avec Description-->
                        <figure>
+                        <div class="responsive">
+                         <div class="gallery">
+                           <a target="_blank" href="/IMAGES/Aurores/pexels-tobias-bjørkli-1938348.jpg">
+                             <img src="/IMAGES/Aurores/pexels-tobias-bjørkli-1938348.jpg" alt="aurores" width="600" height="400">
+                           </a>
+                           <figcaption>
+                           <div class="desc">Aurores </div>
+                           </figcaption>
+                         </div>
+                        </div>
+                       </figure>
+
+                       <!--Carte avec Description-->
+                       <figure>
                        <div class="responsive">
                         <div class="gallery">
-                          <a target="_blank" href="/IMAGES/Aurores/pexels-tobias-bjørkli-1938348.jpg">
-                            <img src="/IMAGES/Aurores/pexels-tobias-bjørkli-1938348.jpg" alt="Aurores" width="600" height="400">
+                          <a target="_blank" href="/IMAGES/Planet/sun.jpg">
+                            <img src="/IMAGES/Aurores/pexels-visit-greenland-360912.jpg" alt="aurores" width="600" height="400">
                           </a>
                           <figcaption>
-                          <div class="desc">Aurores australes</div>
+                          <div class="desc">Aurores </div>
+                          </figcaption>
+                        </div>
+                       </div>
+                       </figure>
+
+                       <!--Carte avec Description-->
+                       <figure>
+                       <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="/IMAGES/Aurores/pexels-stein-egil-liland-1933317.jpg">
+                            <img src="/IMAGES/Aurores/pexels-stein-egil-liland-1933317.jpg" alt="aurores" width="600" height="400">
+                          </a>
+                          <figcaption>
+                          <div class="desc">Aurores boréales</div>
                           </figcaption>
                         </div>
                        </div>
@@ -319,93 +335,92 @@
                        <!--Description du slide-->
                       <div class="clearfix"></div>
                       <div style="padding:6px;" class="why">
-                        <p>En temps normal, la magnétosphère absorbe toutes les particules du vent solaire sans provoquer de phénomène particulier. Toutefois, lorsque l'activité solaire est intense, il arrive que la quantité de particules libérées soit trop grande pour la capacité de la magnétosphère. Celle-ci déverse alors son trop-plein dans l'atmosphère près des pôles. Les particules du vent solaire entrent alors en collision avec les gaz présents dans la thermosphère. Cette interaction permet la production de lumière, rendant ainsi visible l'aurore polaire.</p>
-                        <p>Le phénomène lumineux d'aurore polaire porte le nom d’aurore boréale lorsqu’il est aperçu au pôle nord et d’aurore australe s’il se manifeste au pôle Sud de la Terre.</p>
+                        <p>Une aurore boréale est l'apparition dynamique de diverses couleurs lumineuses dans le ciel, le jour ou la nuit, aux latitudes élevées de l'hémisphère Nord. Les aurores boréales sont toujours disposées le long d'une bande (l'ovale auroral) dont le centre est le PÔLE GÉOMAGNÉTIQUE. La largeur normale de la bande varie entre 500 et 1000 km. Au Canada, sa position moyenne est au-dessus de Yellowknife (Territoires du Nord-Ouest) à l'ouest, et au dessus de la Grande Rivière de la Baleine (Québec) à l'est. Au cours d'épisodes d'activité intense, l'ovale peut s'étendre très au sud jusqu'à Miami, en Floride (août 1972), et même au-delà. La luminosité peut fluctuer très fortement, en particulier aux alentours du minuit local lors du déclenchement explosif d'activités appelées sous-orages. Les aurores boréales proviennent de l'ionosphère, la région de la haute atmosphère allant de 100 à 300 km au-dessus de la surface terrestre. Elles sont principalement causées par des électrons excités (de 1 à 20 kiloélectrons volts) qui sont accélérés vers l'ionosphère à partir d'une région allant de 5000 à 20 000 km au-dessus de la surface terrestre. Ces électrons excités bombardent la haute atmosphère et « excitent » les particules constitutives de l'atmosphère. En revenant à des états de moins grande excitation, ces particules émettent de la lumière. La lumière verte ou rouge vient de l'oxygène atomique excité, et la lumière pourpre, de l'azote moléculaire excité.</p>
                       </div>
                     </div> 
  
-                </div>
-                
-                <!--La nivation entre les slides-->
-                <div class="prevNext">
-                  <div><a href="#s4"></a><a href="#s2"></a></div>
-                  <div><a href="#s1"></a><a href="#s3"></a></div>
-                  <div><a href="#s2"></a><a href="#s4"></a></div>
-                  <div><a href="#s3"></a><a href="#s1"></a></div>
-                </div>
-              
-                <!--Les bulles en bas du contenaire qui permettent de changer de slide, en plus des fleches de (precedent et prochain)-->
-                <div class="bullets">
-                  <a href="#s1">1</a>
-                  <a href="#s2">2</a>
-                  <a href="#s3">3</a>
-                  <a href="#s4">4</a>
-                </div>
-              
-            </div>
+                   </div>
+                   
+                   <!--La nivation entre les slides-->
+                   <div class="prevNext">
+                     <div><a href="#s4"></a><a href="#s2"></a></div>
+                     <div><a href="#s1"></a><a href="#s3"></a></div>
+                     <div><a href="#s2"></a><a href="#s4"></a></div>
+                     <div><a href="#s3"></a><a href="#s1"></a></div>
+                   </div>
+                 
+                   <!--Les bulles en bas du contenaire qui permettent de changer de slide, en plus des fleches de (precedent et prochain)-->
+                   <div class="bullets">
+                     <a href="#s1">1</a>
+                     <a href="#s2">2</a>
+                     <a href="#s3">3</a>
+                     <a href="#s4">4</a>
+                   </div>
+                 
+               </div>
+              </div>
+             </section>
          </div>
-     </section>
- </main>
+     </div>
+</main>
 
-         <!--**********************************************************************************-->
- <footer class="footer-distributed"> <!--Pied de page-->
-    <!--Footer devisé en 3 parties-->
-
-    <div class="footer-left"><!--Partie 1: Contenant  un raccourci du menu principal -->
-
-        <h3>C<span>osmos</span></h3>
-
-        <p class="footer-links">
-            <a href="/HTML/index.html" class="link-1">Home</a>
-            <a href="/HTML/About.html">About</a>
-            <a href="/HTML/Blog.html">Blog</a>
-            <a href="/HTML/FQA.html">FQA</a>
-            <a href="/HTML/Contact.html">Contact</a>
-            
-        </p>
-
-        <p class="footer-company-name">Cosmos © 2022</p>
-    </div>
-
-    <div class="footer-center"> <!--Partie 2: Contenant des extras informations  -->
-
-        <div> 
-            <i class="fa fa-map"></i>
-            <p> <a href="https://goo.gl/maps/yPjTqJqh1VSWeHya7" target="_blank"  title="Localisation" ><span>CLS Centre de loisirs, Bab Dzair, El Afroun</span> Blida, Algerie</a> </p>
+    
+    <footer class="footer-distributed"> <!--Pied de page-->
+        <!--Footer devisé en 3 parties-->
+      
+        <div class="footer-left"><!--Partie 1: Contenant  un raccourci du menu principal -->
+      
+            <h3>C<span>osmos</span></h3>
+      
+            <p class="footer-links">
+                <a href="/HTML/index.html" class="link-1">Home</a>
+                <a href="/HTML/About.html">About</a>
+                <a href="/HTML/Blog.html">Blog</a>
+                <a href="/HTML/FQA.html">FQA</a>
+                <a href="/HTML/Contact.html">Contact</a>
+                
+            </p>
+      
+            <p class="footer-company-name">Cosmos © 2022</p>
         </div>
-
-        <div>
-            <i class="fa fa-phone"></i>
-            <p title="Numero de telephone"> 0672439818</p>
+      
+        <div class="footer-center"> <!--Partie 2: Contenant des extras informations  -->
+      
+            <div> 
+                <i class="fa fa-map"></i>
+                <p> <a href="https://goo.gl/maps/yPjTqJqh1VSWeHya7" target="_blank"  title="Localisation" ><span>CLS Centre de loisirs, Bab Dzair, El Afroun</span> Blida, Algerie</a> </p>
+            </div>
+      
+            <div>
+                <i class="fa fa-phone"></i>
+                <p title="Numero de telephone">0672439818</p>
+            </div>
+      
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="/HTML/Contact.html" title="Email">asa-dz@outlook.com</a></p>
+            </div>
+      
         </div>
-
-        <div>
-            <i class="fa fa-envelope"></i>
-            <p><a href="/HTML/Contact.html" title="Email">asa-dz@outlook.com</a></p>
+      
+        <div class="footer-right"><!--Partie 3: Contenant Une intro des proprietaires + liens reseaux sociaux  -->
+      
+            <p class="footer-company-about">
+                <span>Notre Club</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+      
+            <div class="footer-icons">
+      
+                <a href="https://www.facebook.com/AsaBlida" target="_blank" >Facebook</a>
+                <a href="https://www.instagram.com/astronomy_clubdz/?fbclid=IwAR3DImOD0NxJAgZaMIGi8kZm3lxVkifRQ_9_A5-Tq3BTB2SKJBvlTGu05gM" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/channel/UCFRiodguCAb7W0Y1y10Z3kg" target="_blank">Youtube</a>
+                
+      
+            </div>
+      
         </div>
-
-    </div>
-
-    <div class="footer-right"><!--Partie 3: Contenant Une intro des proprietaires + liens reseaux sociaux  -->
-
-        <p class="footer-company-about">
-            <span>Notre Club</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-        </p>
-
-        <div class="footer-icons">
-
-            <a href="https://www.facebook.com/AsaBlida" target="_blank" >Facebook</a>
-            <a href="https://www.instagram.com/astronomy_clubdz/?fbclid=IwAR3DImOD0NxJAgZaMIGi8kZm3lxVkifRQ_9_A5-Tq3BTB2SKJBvlTGu05gM" target="_blank">Instagram</a>
-            <a href="https://www.youtube.com/channel/UCFRiodguCAb7W0Y1y10Z3kg" target="_blank">Youtube</a>
-            
-
-        </div>
-
-    </div>
-
-</footer>
- 
+      
+      </footer>
 </body>
-
 </html>
